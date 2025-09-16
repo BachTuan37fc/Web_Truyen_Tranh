@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+
+    width: 100%;
+    height: 100vh;
+    
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.897),rgba(255, 255, 255, 0.404)),url(./img/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.p{
+    width: 43%;
+    overflow: hidden;
+
+    
+}
+.p .text{
+    position: relative;
+    font-family: 'Raleway', sans-serif;   
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #ffb142;
+    color: #ffb142;
+}
+.p .text.first-text{
+    color: #fff;
+    text-shadow: 1px 1px 1px white;
+
+}
+.sec-text::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color:none;
+    animation: animate 4s steps(12) infinite;
+    text-shadow: 1px 1px 1px #ffb142;
+
+}
+@keyframes animate {
+    40%,60% {
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+    
+}
+.back-home a i{
+    font-size: 30px;
+}
+.title{
+    position: relative;
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffb142;
+    text-shadow: 1px 1px 1px #ffb142;
+
+}
+.login{
+    width: 40%;
+}
+.from-login{
+
+    max-width: 600px;
+    height: 520px;
+    background-color: rgba(0, 0, 0, 0.521);
+    flex-grow: 1;
+    padding: 30px 30px 40px;
+    border-radius: 5px;
+}
+.form-heading{
+    position: relative;
+    height: 90px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+    font-size: 30px;
+}
+.form-group{
+    border-bottom: 1px solid white;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.form-group:hover{
+    border-bottom: 1px solid #0984e3;
+
+}
+.form-group i{
+    margin-top: 12px;
+}
+.from-input{
+    
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    width: 400px;
+    height: 40px;
+    color:white;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+
+.from-input::placeholder{
+    color: white;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif; font-weight: 500;
+
+}
+input[placeholder], [placeholder], *[placeholder] {
+    color:darkgrey !important;
+}
+
+.from-login i {
+    color:white;
+    font-size: 14px;
+}
+#eye{
+    cursor: pointer;
+}
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.user-had-acc{
+    width: 100%;
+    height: 20px;
+}
+.user-had-acc p {
+    font-size: 16px;
+    font-family: raleway;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+.submit-space{
+    padding-top: 5px;
+}
+
+
+.form-submit{
+    background: transparent;
+    border: 1px solid white;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 100%;
+    height: 50px;
+    padding: 12px 15px;
+    color:black;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;}
+.form-submit:hover{
+    background-color: #0984e3;
+    border: 1px solid #0984e3;
+    color:#fff;
+}
+.gg-fb{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fb{
+    width: 50px;
+    height: 50px;
+    background:url(./img/fb.png) ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    animation: 0.5s ease-in-out;
+}
+.fb:hover{
+    width:55px ;
+    height:55px;
+}
+.gg{
+    width: 50px;
+    height: 50px;
+    background:url(./img/google2.jpg) ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    animation: 0.5s ease-in-out;
+}
+.gg:hover{
+    width:55px ;
+    height:55px;
+}
+.apple{
+    width: 50px;
+    height: 50px;
+    background:url(./img/apple.png) ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    animation: 0.5s ease-in-out;
+}
+.apple:hover{
+    width:55px ;
+    height:55px;
+}

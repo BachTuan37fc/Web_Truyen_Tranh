@@ -1,0 +1,818 @@
+
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+   <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./The_loai.css">
+    <link rel="icon" href="./img/correct.png" />
+    <title>Truyện</title>
+   
+</head>
+
+<body>
+
+<div class="header-container jcsa">      
+   <div  class="jcc">
+      <img src="./img/5.PNG"style="width: 70px; height: 38px;">
+      <a href="#" class="logo text-decor">Truyện</a>
+   </div>
+      <form action="" class="seach-box-color " >
+         <input class="seach-box" type="text" placeholder="Tìm truyện....">
+         <button class="button-seach"><i class="fa-solid fa-magnifying-glass   "></i> </button>       
+      </form>
+
+      <div class="login">
+         <i class="fa-solid fa-lightbulb icon-white"></i>
+         <i class="fa-solid fa-comment icon-white"></i>
+      </div>
+
+      <div class="login">
+      <ul>
+         <a class="text">Đăng nhập</a>
+         <a class="text">Đăng ký</a>
+      </ul>
+      </div>
+   
+<!-- <div id="navbar-toggle">-------------------------------------->
+<div class="nav-toggle-button">
+   <i class=" fa-solid fa-bars"></i>
+</div>
+<div class="nav-mobile open">
+   <div class="jcc">
+<div class="dropmenu-mobile ">
+   <div class="jcc">
+      <form action="" class="seach-box-mobile jcc " >
+         <input type="text" class="seach-text" placeholder="Tìm truyện....">
+         <button class="button-seach-mobile"><i class="fa-solid fa-magnifying-glass   "></i> </button>       
+      </form>
+
+      <div class="login">
+         <i class="fa-solid fa-lightbulb icon-white"></i>
+         <i class="fa-solid fa-comment icon-white"></i>
+      </div>
+   </div>
+    
+      <li><a href="#" class="list-box-logo text jcc ">
+         <i class="fa-solid fa-house"></i>
+      </a></li>
+
+      <li><a href="#" class="list-box text jcc">
+         <p>Hot</p>
+      </a></li>
+
+      <li><a href="#" class="list-box text jcc">
+         <p>Theo Dõi</p>
+      </a></li>
+
+      <li><a href="#" class="list-box text jcc">
+         <p>Lịch Sử</p>
+      </a></li>
+
+      <li><a href="#" class="list-box text jcc">
+         <p>Thể Loại</p>
+      </a></li>
+
+      <li><a href="#" class="list-box text jcc">
+         <p>Xếp Hạng</p>
+      </a></li>
+
+      <li><a href="#" class="list-box text jcc">
+         <p>Tìm Truyện</p>
+      </a></li>
+
+      <li><a href="#" class="list-box text jcc">
+         <p>Con Gái</p>
+      </a></li>
+
+      <li><a href="#" class="list-box text jcc">
+         <p>Con Trai</p>
+      </a></li>
+
+      <li><a href="#" class="list-box text jcc">
+         <p>Fanpage</p>
+      </a></li>
+     
+      <div class="jcsa">
+         <div class="user jcc">
+            <div class="login-mobile text jcsa">
+               <i class="fa-solid fa-user"> </i> 
+               <p>&nbsp;Đăng Nhập</p>
+            </div>
+         </div>
+         <div class="user jcc">
+            <div class="login-mobile text jcsa">
+               <i class="fa-solid fa-pen"> </i>
+               <p> &nbsp;Đăng Ký</p>
+            </div>
+
+         </div>
+      </div>
+   </div>   
+    
+</div>
+</div>
+
+<script>
+const nav_toggle_button = document.querySelector('.nav-toggle-button')
+const nav_toggle_button_icon = document.querySelector('.nav-toggle-button i')
+const dropmenu = document.querySelector('.nav-mobile')
+
+nav_toggle_button.onclick = function()
+{
+   dropmenu.classList.toggle('open')
+
+   const isOpen = dropmenu.classList.contains('open')
+
+   nav_toggle_button_icon.classList = isOpen
+   ? 'fa-solid fa-xmark'
+   : 'fa-solid fa-bars'
+}
+
+</script> 
+</div>
+
+<div class="space"></div>
+<div class="list">
+<ul>
+   <li><a href="#" class="list-box text jcc">
+      <p>HOME</p>
+   </a></li>
+
+   <li><a href="#" class="list-box text jcc">
+      <p>THEO DÕI</p>
+   </a></li>
+
+   <li><a href="#" class="list-box text jcc">
+      <p>LỊCH SỬ</p>
+   </a></li>
+
+   <li><a href="#" class="list-box text jcc">
+      <p>THỂ LOẠI <i class="fa-solid fa-caret-down"></i></p>
+   </a>
+   <div class="sub-list-1">
+      <ul>
+         <div class="sub-list-1-box"> 
+            <li><a href="#" class="text-decor text"><p style="color: red;">Tất cả</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">      
+            <li><a href="#" class="text-decor text"><p>Ecchi</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">   
+            <li><a href="#" class="text-decor text"><p>Mystery</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">      
+            <li><a href="#" class="text-decor text"><p>Smut</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">   
+            <li><a href="#" class="text-decor text"><p>Action</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">      
+            <li><a href="#" class="text-decor text"><p>Famtasy</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p style="color: red;">Ngôn tình</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Sort Yaoi</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Adult</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">      
+            <li><a href="#" class="text-decor text"><p >Gender</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">   
+            <li><a href="#" class="text-decor text"><p>Oneshoot</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">      
+            <li><a href="#" class="text-decor text"><p> Sort Yuri</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">   
+            <li><a href="#" class="text-decor text"><p>Adventure</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">      
+            <li><a href="#" class="text-decor text"><p>Harem</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Pychological </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Sports</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+             <li><a href="#" class="text-decor text"><p>Anime </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Historical </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">      
+            <li><a href="#" class="text-decor text"><p style="color: red;">Romance</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">   
+            <li><a href="#" class="text-decor text"><p>Supernatural</p></a></li>
+        </div>
+
+         <div class="sub-list-1-box">      
+            <li><a href="#" class="text-decor text"><p>Chuyển sinh</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">   
+            <li><a href="#" class="text-decor text"></i><p>Horror</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">      
+            <li><a href="#" class="text-decor text"></i><p>Scholl life</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Thiếu nhi</p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Comedy </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+           <li><a href="#" class="text-decor text"><p>Josei </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Cri-fi </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Tragedy </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Comic </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Live Action </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Seinen </p></a></li>
+         </div>
+
+         <div class="sub-list-1-box">     
+            <li><a href="#" class="text-decor text"><p>Trinh Thám </p></a></li>
+         </div>
+      </ul>
+   </div>
+</li>
+
+   <li><a href="" class="list-box text jcc">
+     <p>XẾP HẠNG <i class="fa-solid fa-caret-down"></i></p>
+   </a>
+   <div class="sub-list">
+   <ul>
+      <div class="sub-list-box">
+         <i class="fa-solid fa-eye smail black-1"></i>
+         <li><a href="#" class="text-decor text"><p style="color: black;">&nbsp;Top all</p></a></li>
+      </div>
+
+      <div class="sub-list-box">
+         <i class="fa-solid fa-signal smail black-1"></i>
+         <li><a href="#" class="text-decor text"><p style="color:red">&nbsp;Truyện Full</p></a></li>
+      </div>
+
+      <div class="sub-list-box">
+         <i class="fa-solid fa-eye smail black-1"></i>
+         <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Top Tháng</p></a></li>
+      </div>
+
+      <div class="sub-list-box">
+         <i class="fa-regular fa-thumbs-up smail black-1"></i>
+         <li><a href="#" class="text-decor text"><p style="color:black">&nbsp; yêu thích</p></a></li>
+      </div>
+
+      <div class="sub-list-box">
+         <i class="fa-solid fa-eye smail black-1"></i>
+         <li><a href="#" class="text-decor text"></i><p style="color:black">&nbsp;Top Tuần</p></a></li>
+      </div>
+
+      <div class="sub-list-box">
+         <i class="fa-solid fa-recycle smail black-1"></i>
+         <li><a href="#" class="text-decor text"></i><p style="color:black">&nbsp;Mới Cập NHật</p></a></li>
+      </div>
+
+      <div class="sub-list-box">
+         <i class="fa-solid fa-eye smail black-1"></i>
+         <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Top Ngày</p></a></li>
+      </div>
+
+      <div class="sub-list-box">
+         <i class="fa-solid fa-cloud-arrow-up smail black-1"></i>
+         <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Mới tải lên</p></a></li>
+      </div>
+
+      <div class="sub-list-box">
+         <i class="fa-solid fa-eye smail black-1"></i>
+         <li><a href="#" class="text-decor text"><p style="color:black">Top Follow</p></a></li>
+      </div>
+
+      <div class="sub-list-box">
+         <i class="fa-solid fa-bars smail black-1"></i>
+         <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Số Chapter</p></a></li>
+      </div>  
+   </ul>
+   </div>
+   </li>
+   <li><a href="#" class="list-box text jcc">
+      <p>TÌM TRUYỆN</p>
+   </a></li>
+
+   <li><a href="#" class="list-box text jcc">
+      <p>CON GÁI</p>
+   </a></li>
+
+   <li><a href="#" class="list-box text jcc">
+      <p>CON TRAI</p>
+   </a></li>
+
+   <li><a href="#" class="list-box text jcc">
+      <p>PANPAGE</p>
+   </a></li>
+   </ul>
+</div>
+
+<div class="nav-notification ">
+</div>
+<div class="nav-notification jcc">
+<div class="nav-notification-box ">
+   <a class="black" href="#"> Nhấp vào đây! </a><p class="black">&nbsp; Để đăng nhập tự động và đồng bộ truyện theo dõi từ website. </p>
+</div>
+</div>
+
+<div class="body-container jcc">
+   <div class="body-container-1 jcc">
+      <div class="container-sub-body">
+      <div class="sub-body-1-2">
+         <div class="sub-body">
+            <a class="black" href="#"> Trang chủ </a>
+            <a class="black" href="#"> >> </a>
+            <a class="black" href="#"> Thể loại  </a>
+         </div>
+
+         <div class="sub-body-1 ">
+            <p>&nbsp;TÌM TRUYỆN TRANH ONLINE - MỚI CẬP NHẬT</p> <br>
+         </div>
+
+      </div>
+
+      <div class="sub-body-2">
+        <div class="sub-body-3">
+         <a href="#" class="main text-decor">
+            <img src="./img/naruto.jpg"  >
+            <p>Naruto OG</p> 
+            <i>Chapter 21</i>
+            <i>Chapter 20</i>
+            <i>Chapter 19</i>
+         </a>
+      
+         <a href="#" class="main text-decor">
+            <img src="./img/one_piece.jpg" >
+            <p>One Piece</p>
+            <i>Chapter 20</i>
+            <i>Chapter 19</i>
+            <i>Chapter 18</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/demon-slave.jpg" >
+            <p>Demon Slave</p>
+            <i>Chapter 45</i>
+            <i>Chapter 44</i>
+            <i>Chapter 43</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/gundam-legacy.jpg">
+            <p>GunDam Legacy</p>
+            <i>Chapter 100</i>
+            <i>Chapter 99</i>
+            <i>Chapter 98</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/clb-pervert.jpg">
+            <p >Clb Pervent</p>
+            <i>Chapter 41</i>
+            <i>Chapter 40</i>
+            <i>Chapter 39</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/robot-x-laserbeam.jpg">
+            <p>Robot X Laserbeam</p>
+            <i>Chapter 20</i>
+            <i>Chapter 19</i>
+            <i>Chapter 18</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/jujutsu-kaisen-chu-thuat-hoi-chien.jpg">
+            <p>Jujutsu Kaisen</p>
+            <i>Chapter 19</i>
+            <i>Chapter 18</i>
+            <i>Chapter 17</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/dragon-ball-after.jpg" >
+            <p>Dragon Ball After</p>
+            <i>Chapter 17</i>
+            <i>Chapter 16</i>
+            <i>Chapter 15</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/doremon.jpg" >
+            <p>Doremon</p>
+            <i>Chapter 124</i>
+            <i>Chapter 123</i>
+            <i>Chapter 122</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/hunter-x-hunter.jpg" >
+            <p>Hunter X Hunter</p>
+            <i>Chapter 36</i>
+            <i>Chapter 35</i>
+            <i>Chapter 34</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/toriko-tho-san-am-thuc.jpg" >
+            <p>Toriko-Thợ Săn Ẩm Thực </p>
+            <i>Chapter 19</i>
+            <i>Chapter 18</i>
+            <i>Chapter 17</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/bleach.jpg" >
+            <p>Bleach</p>
+            <i>Chapter 12</i>
+            <i>Chapter 11</i>
+            <i>Chapter 10</i>
+         </a>  
+
+         <a href="#" class="main text-decor"><img src="./img/nguoi-xau.jpg" >
+            <p>Người xấu</p>
+            <i>Chapter 22</i>
+            <i>Chapter 21</i>
+            <i>Chapter 20</i>
+         </a> 
+
+         <a href="#" class="main text-decor"><img src="./img/tham-tu-conan.jpg" >
+            <p>Thám Tử CONAN</p>
+            <i>Chapter 12</i>
+            <i>Chapter 11</i>
+            <i>Chapter 10</i>
+         </a>
+
+         <a href="#" class="main text-decor"><img src="./img/vo-luyen-dinh-phong.jpg" >
+            <p>Võ Luyện Đỉnh Phong</p>
+            <i>Chapter 26</i>
+            <i>Chapter 25</i>
+            <i>Chapter 24</i>
+         </a> 
+
+         <a href="#" class="main text-decor"><img src="./img/nguyen-ton.jpg" >
+            <p>Nguyên Tôn</p>
+            <i>Chapter 231</i>
+            <i>Chapter 230</i>
+            <i>Chapter 229</i>
+         </a> 
+
+         <a href="#" class="main text-decor"><img src="./img/hoan-doi-dieu-ky.jpg" >
+            <p>Hoán Đổi Diệu Kỳ</p>
+            <i>Chapter 13</i>
+            <i>Chapter 12</i>
+            <i>Chapter 11</i>
+         </a> 
+
+         <a href="#" class="main text-decor"><img src="./img/than-chet-ichigo.jpg" >
+            <p>Thần Chết Ichigo</p>
+            <i>Chapter 133</i>
+            <i>Chapter 132</i>
+            <i>Chapter 131</i>
+         </a> 
+         <a href="#" class="main text-decor"><img src="./img/tho-san-quy.jpg" >
+            <p>Thợ Săn Quỷ</p>
+            <i>Chapter 36</i>
+            <i>Chapter 35</i>
+            <i>Chapter 34</i>
+         </a> 
+
+         <a href="#" class="main text-decor"><img src="./img/shuumatsu-no-valkyrie.jpg" >
+            <p>Shuumatsu No Valkyrie</p>
+            <i>Chapter 342</i>
+            <i>Chapter 341</i>
+            <i>Chapter 340</i>
+         </a> 
+
+         <div class="sb-3-select">
+            <div class="sb-3-select-num">
+               <p>1</p>
+            </div>
+            <div class="sb-3-select-num">
+               <p>2</p>
+            </div>
+            <div class="sb-3-select-num">
+               <p>3</p>
+            </div>
+            <div class="sb-3-select-num">
+               <p>4</p>
+            </div>
+            <div class="sb-3-select-num">
+               <p><i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+         </div>
+      </div>
+        
+        <div class="sub-body-4">
+          <div class="sub-body-5">
+           <div class="sub-body-6">
+            <div class="title-sb5">
+               <p>Thể Loại</p>
+            </div>
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">  
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Tất Cả Thể Loại</span>
+                  </button> 
+               </div>
+            </div>
+                    
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Action</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Adult</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Action</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Adventure</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Action</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Anime</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Chuyển Sinh</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Comerdy</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Comic</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Cooking</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Cổ đại</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Drama</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Manga</span>
+                  </button>
+               </div>
+            </div>
+
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Ecchi</span>
+                  </button>
+               </div>
+            </div>
+ 
+               </div>
+             </div> 
+        </div>
+       
+      </div>
+    </div>
+    
+   </div>
+    </div>
+  </div>
+   
+          <div class="footer-container">
+            <div class="sub-footer-1">
+                <p>
+                    QuickBook truyện 
+                </p>
+                <p style="font-size: 14px;text-align: justify;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit it 
+                    amet consectetur. Soluta, similique? Lorem ipsum dolor sit, 
+                    amet consectetur adipisicing elit. Officiis itaque assumenda 
+                    eveniet quisquam dolorum iure amet, et ullam dignissimos omnis!
+                </p>
+                <div class="form-contai-mobile jcc">
+                    <div class="form-mobi">
+                        <div class="title-mobile">
+                                Hãy góp ý với chúng tôi
+                        </div>
+                        <input type="text" class="input-mobile" placeholder="Lời góp ý...">
+                        <input type="submit" value="Gửi" class="submit-mobile">
+    
+                    </div>
+                </div>
+    
+                <div class="social">
+                    
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+            
+                </div>
+            </div>
+            <div class="sub-footer-2">
+                <p style="text-align: center;">
+                    Liên Hệ Chúng Tôi
+                </p>
+             <div class="jcc">
+              <div class="footer-mobile">
+                <div class="link-footer">
+                    
+                    <ul>
+                        <li>
+                            <a href="#">F.A.Q </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Dữ liệu cá nhân </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Bảo mật và dữ liệu </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Hỗ trợ </a>
+                        </li>
+                    </ul>
+                </div>
+    
+              </div>
+              <div class="link-footer desktop">
+               
+                <ul>
+                    <li>
+                        <a href="#">F.A.Q </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Dữ liệu cá nhân </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Bảo mật và dữ liệu </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Liên hệ bản quyền </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Hỗ trợ </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Ủng hộ chúng tôi </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Liên hệ </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="sub-footer-3 jcc">
+                <div class="form">
+                    <div class="title">
+                        Hãy góp ý với chúng tôi
+                    </div>
+                    <input type="text" class="form-input" placeholder="&nbsp;Hãy góp ý với chúng tôi">
+                    <input type="submit" value="Gửi" class="form-submit">
+                </div>
+                <script>
+                  var button = document.querySelector('.form-submit');
+                  button.onclick = function(){
+                  alert("Cảm ơn bạn đã góp ý cho chúng tôi?");
+                  }
+                </script>
+                
+            </div>
+            
+           </div>  
+        <div class="underground">
+            <p>Copyright @ 2024 Le Anh Dung Deverloper</p>
+        </div>
+
+</body>
+
+</html>
+<!---->

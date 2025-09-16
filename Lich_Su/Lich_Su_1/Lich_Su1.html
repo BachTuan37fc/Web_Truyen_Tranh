@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/98387a279c.js"></script>
+   <script src="https://code.jquery.com/jquery-3.x-git.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+   <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0" nonce="BRTGsznD"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0" nonce="v4u97WA2"></script>    
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0" nonce="wIAITZ93"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Lich_Su1.css">
+    <link rel="icon" href="./img/correct.png" />
+    <title>Truyện</title>
+   
+</head>
+
+<body>
+   <div id="container-loader">
+      <div class="jcc">
+          <div id="loading">
+          </div> 
+      </div>
+      </div>
+       <script>
+          let load = document.getElementById('loading');
+          let bg = document.getElementById('container-loader');
+
+          let count = 5;
+          for(let delay = 0;delay < 5;delay++){
+              let newElement = document.createElement('div');
+              newElement.style.setProperty('--delay',(-0.8 * delay)+'s')
+              load.appendChild(newElement);
+          }
+          window.onload = function(){
+              load.remove();
+              bg.remove();
+          }
+       </script> 
+
+<div class="header-container jcsa">
+        
+   <div  class="jcc">
+      <img src="./img/5.PNG"style="width: 70px; height: 38px;">
+      <a href="#" class="logo text-decor">Truyện</a>
+   </div>
+
+   <form action="" class="seach-box-color " >
+       <input class="seach-box" type="text" placeholder="Tìm truyện....">
+        <button class="button-seach"><i class="fa-solid fa-magnifying-glass   "></i> </button>       
+   </form>
+   <div class="login">
+      <i class="fa-solid fa-lightbulb icon-white"></i>
+      <i class="fa-solid fa-comment icon-white"></i>
+   </div>
+   <div class="login">
+   <ul>
+      <a class="text-decor white " href="/Lich_Su/Dang_Nhap/Đăng_Nhập.html" target="_blank"> <p class="text">Đăng nhập</p> </a>
+      <a class="text-decor white " href="/Lich_Su/Dang_Ky/Đăng_Ký.html" target="_blank" ><p class="text">Đăng ký</p></a>
+      <a class="text-decor white " href="/Lich_Su/Lich_Su/Lịch_Sử.html" target="_blank"> <p class="text">VIP</p> </a>
+
+   </ul>
+   </div>
+<!-- <div id="navbar-toggle">-->
+   <div class="nav-toggle-button">
+      <i class=" fa-solid fa-bars"></i>
+   </div>
+   <div class="nav-mobile open">
+      <div class="jcc">
+   <div class="dropmenu-mobile ">
+    <div class="jcc">
+       <form action="" class="seach-box-mobile jcc " >
+          <input type="text" class="seach-text" placeholder="Tìm truyện....">
+           <button class="button-seach-mobile"><i class="fa-solid fa-magnifying-glass   "></i> </button>       
+       </form>
+      <div class="login">
+         <i class="fa-solid fa-lightbulb icon-white"></i>
+         <i class="fa-solid fa-comment icon-white"></i>
+      </div>
+
+    </div>
+    
+    
+       <li><a href="#" class="list-box-logo text jcc ">
+          <i class="fa-solid fa-house"></i>
+       </a></li>
+       <li><a href="#" class="list-box text jcc">
+          <p>Hot</p>
+       </a></li>
+       <li><a href="#" class="list-box text jcc">
+          <p>Lịch Sử</p>
+       </a></li>
+       <li><a href="#" class="list-box text jcc">
+          <p>Thể Loại</p>
+       </a></li><li><a href="#" class="list-box text jcc">
+          <p>Xếp Hạng</p>
+       </a></li>
+       <li><a href="#" class="list-box text jcc">
+          <p>Tìm Truyện</p>
+       </a></li>
+       <li><a href="#" class="list-box text jcc">
+          <p>Con Gái</p>
+       </a></li>
+       <li><a href="#" class="list-box text jcc">
+          <p>Con Trai</p>
+       </a></li>
+       <li><a href="#" class="list-box text jcc">
+          <p>Truyện Chũ</p>
+       </a></li>
+       <li><a href="#" class="list-box text jcc">
+        <p>Fanpage</p>
+       </a></li>
+       <div class="jcsa">
+          <div class="user jcc">
+             <div class="login-mobile text jcsa">
+               <i class="fa-solid fa-user"> </i> 
+               <p>&nbsp;Đăng Nhập</p>
+             </div>
+          </div>
+          <div class="user jcc">
+              <div class="login-mobile text jcsa">
+               <i class="fa-solid fa-pen"> </i>
+               <p> &nbsp;Đăng Ký</p>
+             </div>
+          </div>
+       </div>
+      </div>   
+ </div>
+</div>
+<script>
+   
+   const nav_toggle_button = document.querySelector('.nav-toggle-button')
+   const nav_toggle_button_icon = document.querySelector('.nav-toggle-button i')
+   const dropmenu = document.querySelector('.nav-mobile')
+
+nav_toggle_button.onclick = function()
+{
+   dropmenu.classList.toggle('open')
+
+   const isOpen = dropmenu.classList.contains('open')
+
+   nav_toggle_button_icon.classList = isOpen
+   ? 'fa-solid fa-xmark'
+   : 'fa-solid fa-bars'
+}
+
+
+ 
+</script> 
+
+</div>
+<div class="space"></div>
+<div class="list">
+<ul>
+  
+  <li><a href="/Trangchu/trangchu.html" class="list-box text jcc">
+     <p>Home</p>
+  </a></li>
+  <li><a href="#" class="list-box text jcc">
+   <p>Theo dõi</p>
+  </a></li>
+  <li><a href="#" class="list-box text jcc">
+     <p>Lịch Sử</p>
+  </a></li>
+  <li><a href="#" class="list-box text jcc">
+   <p>Thể Loại <i class="fa-solid fa-caret-down"></i></p>
+</a>
+<div class="sub-list-1">
+   <ul>
+      <div class="sub-list-1-box"> 
+       <li><a href="#" class="text-decor text"><p style="color: red;">Tất cả</p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"><p>Ecchi</p></a></li>
+      </div>
+      <div class="sub-list-1-box">   
+       <li><a href="#" class="text-decor text"><p>Mystery</p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"><p>Smut</p></a></li>
+      </div>
+      <div class="sub-list-1-box">   
+       <li><a href="#" class="text-decor text"><p>Action</p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"><p>Famtasy</p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p style="color: red;">Ngôn tình</p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Sort Yaoi</p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Adult</p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"><p >Gender</p></a></li>
+      </div>
+      <div class="sub-list-1-box">   
+       <li><a href="#" class="text-decor text"><p>Oneshoot</p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"><p> Sort Yuri</p></a></li>
+      </div>
+      <div class="sub-list-1-box">   
+       <li><a href="#" class="text-decor text"><p>Adventure</p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"><p>Harem</p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Pychological </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Sports</p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Anime </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Historical </p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"><p style="color: red;">Romance</p></a></li>
+      </div>
+      <div class="sub-list-1-box">   
+       <li><a href="#" class="text-decor text"><p>Supernatural</p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"><p>Chuyển sinh</p></a></li>
+      </div>
+      <div class="sub-list-1-box">   
+       <li><a href="#" class="text-decor text"></i><p>Horror</p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"></i><p>Scholl life</p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Thiếu nhi</p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Comedy </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Josei </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Cri-fi </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Tragedy </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Comic </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Live Action </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Seinen </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Trinh Thám </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Cooking </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Manga </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Shoujo </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Truyện Scan </p></a></li>
+      </div>
+      <div class="sub-list-1-box">      
+       <li><a href="#" class="text-decor text"><p style="color: red;">Cổ Đại</p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p style="color: red;"> Manhua </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Shoujo Ai </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Truyện Màu </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Doujinshi </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Martial Arts</p></a></li>
+      </div> 
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Shounen </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Webtoon </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Drama </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Mature</p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Shounen Ai </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p style="color: red;">Xuyên Không </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Mecha </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Slice of Life </p></a></li>
+      </div>
+      <div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Full </p></a></li>
+      </div><div class="sub-list-1-box">     
+       <li><a href="#" class="text-decor text"><p>Superman </p></a></li>
+      </div>
+   </ul>
+ </div>
+</li>
+<li><a href="#" class="list-box text jcc">
+   <p>Tìm Truyện</p>
+</a></li>
+<li><a href="#" class="list-box text jcc">
+ <p>Fanpage</p>
+</a></li>
+  <li><a href="" class="list-box text jcc">
+     <p>Xếp Hạng <i class="fa-solid fa-caret-down"></i></p>
+  </a>
+  <div class="sub-list">
+   <ul>
+      <div class="sub-list-box">
+       <i class="fa-solid fa-eye smail black-1"></i>
+       <li><a href="#" class="text-decor text"><p style="color: black;">&nbsp;Top all</p></a></li>
+      </div>
+      <div class="sub-list-box">
+       <i class="fa-solid fa-signal smail black-1"></i>
+       <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Truyện Full</p></a></li>
+      </div>
+      <div class="sub-list-box">
+       <i class="fa-solid fa-eye smail black-1"></i>
+       <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Top Tháng</p></a></li>
+      </div>
+      <div class="sub-list-box">
+       <i class="fa-regular fa-thumbs-up smail black-1"></i>
+       <li><a href="#" class="text-decor text"><p style="color:black">&nbsp; yêu thích</p></a></li>
+      </div>
+      <div class="sub-list-box">
+       <i class="fa-solid fa-eye smail black-1"></i>
+       <li><a href="#" class="text-decor text"></i><p style="color:black">&nbsp;Top Tuần</p></a></li>
+      </div>
+      <div class="sub-list-box">
+       <i class="fa-solid fa-recycle smail black-1"></i>
+       <li><a href="#" class="text-decor text"></i><p style="color:black">&nbsp;Mới Cập NHật</p></a></li>
+      </div>
+      <div class="sub-list-box">
+       <i class="fa-solid fa-eye smail black-1"></i>
+       <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Top Ngày</p></a></li>
+      </div>
+      <div class="sub-list-box">
+       <i class="fa-solid fa-cloud-arrow-up smail black-1"></i>
+       <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Mới tải lên</p></a></li>
+      </div>
+      <div class="sub-list-box">
+       <i class="fa-solid fa-eye smail black-1"></i>
+       <li><a href="#" class="text-decor text"><p style="color:black">Top Follow</p></a></li>
+      </div>
+      <div class="sub-list-box">
+       <i class="fa-solid fa-bars smail black-1"></i>
+       <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Số Chapter</p></a></li>
+      </div> 
+   </ul>
+ </div>
+</li>
+</ul>
+</div>
+
+
+
+<div class="nav-notification ">
+</div>
+<div class="nav-notification jcc">
+<div class="nav-notification-box ">
+<a class="black" href="#">Nhấp vào đây </a><p class="black"> &nbsp;để đăng nhập tự động và đồng bộ truyện theo dõi từ site cũ.Không truy cập web giả mạo để tránh bọ hack tài khoản. </p>
+</div>
+</div>
+  <div class="body-container jcc">
+    <div class="body-container-1 jcc">
+      <div class="container-sub-body">
+      <div class="sub-body-1-2">
+        <div class="sub-body">
+         <a href="#" class="black"><p >Trang chủ &nbsp;&nbsp;</p></a>
+         <a href="#" class="black"><p >Lịch sử</p></a>
+        </div>
+        <div class="sub-body-1 ">
+         <p>&nbsp;Lịch sử đọc truyện ></p> <br>
+        </div>
+      </div>
+        <div class="sub-body-6">
+        <div class="sub-body-3">
+         <a href="#" class="main text-decor">
+            <img src="./img/t1.jpg"  >
+            <p>Lời nhắc tử vong</p> 
+            <i>Đọc tiếp chapter 34</i>
+         </a>
+         <a href="#" class="main text-decor">
+            <img src="./img/t2.jpg" >
+            <p>Thần kiếm vô song</p>
+            <i>Đọc tiếp chapter 02</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t3.jpg" >
+            <p>Anh là người Xấu</p>
+            <i>Đọc tiếp chapter 45</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t4.jpg">
+            <p>Đại tướng Vũ Hành</p>
+            <i>Đọc tiếp chapter 03</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t5.jpg">
+            <p >Thần súng tiến hóa</p>
+            <i>Đọc tiếp chapter 41</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t6.jpg">
+            <p>Phong thần kiếm</p>
+            <i>Đọc tiếp chapter 22</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t7.jpg">
+            <p>Võ luyện đỉnh phong</p>
+            <i>Đọc tiếp chapter 10</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t8.jpg" >
+            <p>Live Stream ở địa ngục</p>
+            <i>Đọc tiếp chapter 17</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t9.jpg" >
+            <p>Tự hào là Ri con</p>
+            <i>Đọc tiếp chapter 72</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t10.jpg" >
+            <p>Bố tôi là đặc vụ</p>
+            <i>Đọc tiếp chapter 36</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t11.jpg" >
+            <p>Thợ xẻ </p>
+            <i>Đọc tiếp chapter 19</i>
+         </a>
+         <a href="/Lich_Su/Click/animation.html" class="main text-decor"><img src="./img/t2.jpg" >
+            <p>Thần linh sa ngã</p>
+            <i>Đọc tiếp chapter 12</i>
+         </a>  
+
+         <div class="sb-3-select">
+            <div class="sb-3-select-num">
+               <p>1</p>
+            </div>
+            <div class="sb-3-select-num">
+               <p>2</p>
+            </div>
+            <div class="sb-3-select-num">
+               <p>3</p>
+            </div>
+            <div class="sb-3-select-num">
+               <p>4</p>
+            </div>
+            <div class="sb-3-select-num">
+               <p><i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+         </div>
+
+         <div class="sub-body-7">
+            <div id="fb-root"></div>
+            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" 
+            data-width="660" 
+            data-numposts="8"></div>
+         </div>
+         <div class="sub-body-9">
+            <div id="fb-root"></div>
+            <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" 
+            data-width="300" 
+            data-numposts="8"></div>
+         </div>
+        </div>
+        <div class="sub-body-4-5">
+          <div class="sub-body-4">
+          
+            <a href="#"><img src="./img/h1.png" 
+            style="width: 302px; height: 553px; background-position: center; background-size: cover;"></a>
+           <div class="sub-body-5">
+            <div class="title-sb5">
+               <p>Bảng xếp hạng</p>
+            </div>
+            <div class="dropdown ml-5">
+               <div class="dropdown-trigger">  
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Top Tuần</span>
+                  </button> 
+               </div>
+                 <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+               </div>
+            </div>
+                    
+             <div class="dropdown ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu4">
+                     <span class="black">Top Tháng</span>
+                  </button>
+               </div>
+               <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                 <div class="dropdown-content-4">
+                  <div class="jcc">
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item"></div>
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">01&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t3.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Anh là người xấu</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 1</p></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">02&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t18.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Tự nhiên giàu to</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 67</p></div>
+                        </div>
+                     </div>
+                  </a> 
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">03&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t16.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp;Dẹp loạn địa ngục </p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 123</p></div>
+                        </div>
+                     </div>
+                  </a>                  
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">04&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t5.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Thần súng tiến hóa</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 108</p></div>
+                        </div>
+                     </div>
+                  </a>                  
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">05&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t9.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Tự hào là Ri con</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 98</p></div>
+                        </div>
+                     </div>
+                  </a>                  
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">06&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t10.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Bố tôi là đặc vụ</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 39</p></div>
+                        </div>
+                     </div>
+                  </a>
+                 </div>
+               </div>
+             </div>
+             
+             <div class="dropdown is-right ml-5">
+               <div class="dropdown-trigger">
+                  <button class="button-dd" aria-haspopup="true" aria-controls="dropdown-menu6">
+                     <span class="black">Top Qũy</span>
+                  </button>
+               </div>
+               <div class="dropdown-menu" id="dropdown-menu6" role="menu">
+                 <div class="dropdown-content-6">
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">01&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t14.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Giàu bao nhiêu cho đủ</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 98</p></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">02&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t13.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Một mình vẫn ổn't</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 430</p></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">03&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t12.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Đoản đao</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 67</p></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black ;">04&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t18.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Tự nhiên giàu to</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 67</p></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">05&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t17.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Đẹp trai nhất làng</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 51</p></div>
+                        </div>
+                     </div>
+                  </a>
+                  <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                     <div class="jcc">
+                        <div class="rank-toptuan">
+                           <p style="font-size: 26px; color: black;">06&nbsp;&nbsp;</p>
+                        </div>
+                        <div class="img-toptuan">
+                           <img src="./img/t19.jpg">
+                        </div>
+                        <div class="name-toptuan">
+                           <div class="name"><p class="black">&nbsp; Binh đoàn số 13</p></div>
+                            <div class="chapter"> <p class="black">&nbsp; Chapter 13</p></div>
+                        </div>
+                     </div>
+                  </a>
+                 </div>
+               </div>
+             </div>
+             <div class="btn1">
+               <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                  <div class="jcc">
+                     <div class="rank-toptuan">
+                        <p style="font-size: 26px; color: black;">01&nbsp;&nbsp;</p>
+                     </div>
+                     <div class="img-toptuan">
+                        <img src="./img/t11.jpg">
+                     </div>
+                     <div class="name-toptuan">
+                        <div class="name"><p class="black">&nbsp; Thợ xẻ</p></div>
+                         <div class="chapter"> <p class="black">&nbsp; Chapter 121</p></div>
+                     </div>
+                  </div>
+               </a>
+               <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                  <div class="jcc">
+                     <div class="rank-toptuan">
+                        <p style="font-size: 26px; color: black;">02&nbsp;&nbsp;</p>
+                     </div>
+                     <div class="img-toptuan">
+                        <img src="./img/t4.jpg">
+                     </div>
+                     <div class="name-toptuan">
+                        <div class="name"><p class="black">&nbsp; Đại tướng Vũ Hành</p></div>
+                         <div class="chapter"> <p class="black">&nbsp; Chapter 78</p></div>
+                     </div>
+                  </div>
+               </a>
+               <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                  <div class="jcc">
+                     <div class="rank-toptuan">
+                        <p style="font-size: 26px; color: black;">03&nbsp;&nbsp;</p>
+                     </div>
+                     <div class="img-toptuan">
+                        <img src="./img/t20.jpg">
+                     </div>
+                     <div class="name-toptuan">
+                        <div class="name"><p class="black">&nbsp; Bồi Bàn có gì vui?</p></div>
+                         <div class="chapter"> <p class="black">&nbsp; Chapter 32</p></div>
+                     </div>
+                  </div>
+               </a>
+               <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                  <div class="jcc">
+                     <div class="rank-toptuan">
+                        <p style="font-size: 26px; color: black;">04&nbsp;&nbsp;</p>
+                     </div>
+                     <div class="img-toptuan">
+                        <img src="./img/t13.jpg">
+                     </div>
+                     <div class="name-toptuan">
+                        <div class="name"><p class="black">&nbsp; Một mình vẫn ổn't</p></div>
+                         <div class="chapter"> <p class="black">&nbsp; Chapter 430</p></div>
+                     </div>
+                  </div>
+               </a>
+               <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                  <div class="jcc">
+                     <div class="rank-toptuan">
+                        <p style="font-size: 26px; color: black;">05&nbsp;&nbsp;</p>
+                     </div>
+                     <div class="img-toptuan">
+                        <img src="./img/t17.jpg">
+                     </div>
+                     <div class="name-toptuan">
+                        <div class="name"><p class="black">&nbsp; Đẹp trai nhất làng</p></div>
+                         <div class="chapter"> <p class="black">&nbsp; Chapter 51</p></div>
+                     </div>
+                  </div>
+               </a>
+               <a href="/Lich_Su/Click/animation.html" class="dropdown-item">
+                  <div class="jcc">
+                     <div class="rank-toptuan">
+                        <p style="font-size: 26px; color: black;">06&nbsp;&nbsp;</p>
+                     </div>
+                     <div class="img-toptuan">
+                        <img src="./img/t6.jpg">
+                     </div>
+                     <div class="name-toptuan">
+                        <div class="name"><p class="black">&nbsp; Phong thần kiếm</p></div>
+                         <div class="chapter"> <p class="black">&nbsp; Chapter 23</p></div>
+                     </div>
+                  </div>
+               </a>
+             </div>
+             
+             <script>
+                 $(function($){
+                 $(".dropdown .button-dd").click(function (){
+                 var dropdown = $(this).parents('.dropdown');
+                 dropdown.toggleClass('is-active');
+                 dropdown.focusout(function() {
+                     window.setTimeout(function() {dropdown.removeClass('is-active');}, 100);
+                      });
+                    });
+                 });
+             
+                 </script>
+                 
+             <script>
+                 $(function($){
+                 $(".dropdown .button-dd3").click(function (){
+                 var dropdown = $(this).parents('.dropdown');
+                 dropdown.toggleClass('is-active');
+                 dropdown.focusout(function() {
+                     window.setTimeout(function() {dropdown.removeClass('is-active');}, 100);
+                      });
+                     });
+                  });
+              
+                  </script>
+          </div> 
+        </div>
+      </div>
+    </div>
+   </div>
+    </div>
+  </div>
+   
+
+
+          <div class="footer-container">
+            <div class="sub-footer-1">
+                <p>
+                    QuickBook truyện 
+                </p>
+                <p style="font-size: 14px;text-align: justify;">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit it 
+                    amet consectetur. Soluta, similique? Lorem ipsum dolor sit, 
+                    amet consectetur adipisicing elit. Officiis itaque assumenda 
+                    eveniet quisquam dolorum iure amet, et ullam dignissimos omnis!
+                </p>
+                <div class="form-contai-mobile jcc">
+                    <div class="form-mobi">
+                        <div class="title-mobile">
+                                Hãy góp ý với chúng tôi
+                        </div>
+                        <input type="text" class="input-mobile" placeholder="Lời góp ý...">
+                        <input type="submit" value="Gửi" class="submit-mobile">
+    
+                    </div>
+                </div>
+    
+                <div class="social">
+                    
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+            
+                </div>
+            </div>
+            <div class="sub-footer-2">
+                <p style="text-align: center;">
+                    Liên Hệ Chúng Tôi
+                </p>
+             <div class="jcc">
+              <div class="footer-mobile">
+                <div class="link-footer">
+                    
+                    <ul>
+                        <li>
+                            <a href="#">F.A.Q </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Dữ liệu cá nhân </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Bảo mật và dữ liệu </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">Hỗ trợ </a>
+                        </li>
+                    </ul>
+                </div>
+    
+              </div>
+              <div class="link-footer desktop">
+               
+                <ul>
+                    <li>
+                        <a href="#">F.A.Q </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Dữ liệu cá nhân </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Bảo mật và dữ liệu </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Liên hệ bản quyền </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Hỗ trợ </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Ủng hộ chúng tôi </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">Liên hệ </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            <div class="sub-footer-3 jcc">
+                <div class="form">
+                    <div class="title">
+                        Hãy góp ý với chúng tôi
+                    </div>
+                    <input type="text" class="form-input" placeholder="&nbsp;Hãy góp ý với chúng tôi">
+                    <input type="submit" value="Gửi" class="form-submit">
+                </div>
+                <script>
+                  var button = document.querySelector('.form-submit');
+                  button.onclick = function(){
+                  alert("Cảm ơn bạn đã góp ý cho chúng tôi?");
+                  }
+                </script>
+                
+            </div>
+            
+           </div>  
+        <div class="underground">
+            <p>Copyright @ 2024 Nguyen Van Giap Deverloper</p>
+        </div>
+
+</body>
+
+</html>

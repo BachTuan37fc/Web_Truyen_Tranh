@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/98387a279c.js"></script>
+    <script src="https://code.jquery.com/jquery-3.x-git.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+   <link rel="stylesheet" href="https://bulma.io/vendor/fontawesome-free-5.15.2-web/css/all.min.css">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0" nonce="BRTGsznD"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0" nonce="v4u97WA2"></script>    
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0" nonce="wIAITZ93"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Lịch_Sử.css">
+    <link rel="icon" href="./img/correct.png" />
+    
+    
+</head>
+<body>
+   <div class="header-container jcsa">
+        
+      <div  class="jcc">
+         <img src="./img/5.PNG"style="width: 70px; height: 38px;">
+         <a href="#" class="logo text-decor">Truyện</a>
+      </div>
+   
+      <form action="" class="seach-box-color " >
+          <input class="seach-box" type="text" placeholder="Tìm truyện....">
+           <button class="button-seach"><i class="fa-solid fa-magnifying-glass   "></i> </button>       
+      </form>
+      <div class="login">
+         <i class="fa-solid fa-lightbulb icon-white"></i>
+         <i class="fa-solid fa-comment icon-white"></i>
+      </div>
+      <div class="login">
+      <ul>
+         <a class="text-decor white " href="/Dang_Nhap/Đăng_Nhập.html" target="_blank"> <p class="text">Đăng nhập</p> </a>
+         <a class="text-decor white " href="/Dang_Ky/Đăng_Ký.html" target="_blank" ><p class="text">Đăng ký</p></a>
+      </ul>
+      </div>
+   <!-- <div id="navbar-toggle">-->
+    <div class="nav-toggle-button">
+       <i class=" fa-solid fa-bars"></i>
+    </div>
+    <div class="nav-mobile open">
+      <div class="jcc">
+    <div class="dropmenu-mobile ">
+       <div class="jcc">
+          <form action="" class="seach-box-mobile jcc " >
+             <input type="text" class="seach-text" placeholder="Tìm truyện....">
+              <button class="button-seach-mobile"><i class="fa-solid fa-magnifying-glass   "></i> </button>       
+         </form>
+         <div class="login">
+            <i class="fa-solid fa-lightbulb icon-white"></i>
+            <i class="fa-solid fa-comment icon-white"></i>
+         </div>
+   
+       </div>
+       
+       
+          <li><a href="#" class="list-box-logo text jcc ">
+             <i class="fa-solid fa-house"></i>
+          </a></li>
+          <li><a href="#" class="list-box text jcc">
+             <p>Hot</p>
+          </a></li>
+          <li><a href="#" class="list-box text jcc">
+             <p>Lịch Sử</p>
+          </a></li>
+          <li><a href="#" class="list-box text jcc">
+             <p>Thể Loại</p>
+          </a></li><li><a href="#" class="list-box text jcc">
+             <p>Xếp Hạng</p>
+          </a></li>
+          <li><a href="#" class="list-box text jcc">
+             <p>Tìm Truyện</p>
+          </a></li>
+          <li><a href="#" class="list-box text jcc">
+             <p>Con Gái</p>
+          </a></li>
+          <li><a href="#" class="list-box text jcc">
+             <p>Con Trai</p>
+          </a></li>
+          <li><a href="#" class="list-box text jcc">
+             <p>Truyện Chũ</p>
+          </a></li>
+          <li><a href="#" class="list-box text jcc">
+           <p>Fanpage</p>
+          </a></li>
+          <div class="jcsa">
+             <div class="user jcc">
+                <div class="login-mobile text jcsa">
+                  <i class="fa-solid fa-user"> </i> 
+                  <p>&nbsp;Đăng Nhập</p>
+                </div>
+             </div>
+             <div class="user jcc">
+                 <div class="login-mobile text jcsa">
+                  <i class="fa-solid fa-pen"> </i>
+                  <p> &nbsp;Đăng Ký</p>
+                 </div>
+   
+             </div>
+          </div>
+         </div>   
+       
+    </div>
+   
+   </div>
+   <script>
+      
+   const nav_toggle_button = document.querySelector('.nav-toggle-button')
+   const nav_toggle_button_icon = document.querySelector('.nav-toggle-button i')
+   const dropmenu = document.querySelector('.nav-mobile')
+   
+   nav_toggle_button.onclick = function()
+   {
+      dropmenu.classList.toggle('open')
+   
+      const isOpen = dropmenu.classList.contains('open')
+   
+      nav_toggle_button_icon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+   }
+   
+   
+    
+    </script> 
+   
+   </div>
+   <div class="space"></div>
+   <div class="list">
+   <ul>
+     <li><a href="#" class="list-box-logo jcc ">
+        <i class="fa-solid fa-house"></i>
+     </a></li>
+     <li><a href="#" class="list-box text jcc">
+        <p>Hot</p>
+     </a></li>
+     <li><a href="#" class="list-box text jcc">
+        <p>Lịch Sử</p>
+     </a></li>
+     <li><a href="#" class="list-box text jcc">
+      <p>Thể Loại <i class="fa-solid fa-caret-down"></i></p>
+   </a>
+   <div class="sub-list-1">
+      <ul>
+         <div class="sub-list-1-box"> 
+          <li><a href="#" class="text-decor text"><p style="color: red;">Tất cả</p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"><p>Ecchi</p></a></li>
+         </div>
+         <div class="sub-list-1-box">   
+          <li><a href="#" class="text-decor text"><p>Mystery</p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"><p>Smut</p></a></li>
+         </div>
+         <div class="sub-list-1-box">   
+          <li><a href="#" class="text-decor text"><p>Action</p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"><p>Famtasy</p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p style="color: red;">Ngôn tình</p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Sort Yaoi</p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Adult</p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"><p >Gender</p></a></li>
+         </div>
+         <div class="sub-list-1-box">   
+          <li><a href="#" class="text-decor text"><p>Oneshoot</p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"><p> Sort Yuri</p></a></li>
+         </div>
+         <div class="sub-list-1-box">   
+          <li><a href="#" class="text-decor text"><p>Adventure</p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"><p>Harem</p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Pychological </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Sports</p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Anime </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Historical </p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"><p style="color: red;">Romance</p></a></li>
+         </div>
+         <div class="sub-list-1-box">   
+          <li><a href="#" class="text-decor text"><p>Supernatural</p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"><p>Chuyển sinh</p></a></li>
+         </div>
+         <div class="sub-list-1-box">   
+          <li><a href="#" class="text-decor text"></i><p>Horror</p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"></i><p>Scholl life</p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Thiếu nhi</p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Comedy </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Josei </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Cri-fi </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Tragedy </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Comic </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Live Action </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Seinen </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Trinh Thám </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Cooking </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Manga </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Shoujo </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Truyện Scan </p></a></li>
+         </div>
+         <div class="sub-list-1-box">      
+          <li><a href="#" class="text-decor text"><p style="color: red;">Cổ Đại</p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p style="color: red;"> Manhua </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Shoujo Ai </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Truyện Màu </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Doujinshi </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Martial Arts</p></a></li>
+         </div> 
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Shounen </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Webtoon </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Drama </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Mature</p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Shounen Ai </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p style="color: red;">Xuyên Không </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Mecha </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Slice of Life </p></a></li>
+         </div>
+         <div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Full </p></a></li>
+         </div><div class="sub-list-1-box">     
+          <li><a href="#" class="text-decor text"><p>Superman </p></a></li>
+         </div>
+   
+         
+      </ul>
+    </div>
+   </li>
+     <li><a href="" class="list-box text jcc">
+        <p>Xếp Hạng <i class="fa-solid fa-caret-down"></i></p>
+     </a>
+     <div class="sub-list">
+      <ul>
+         <div class="sub-list-box">
+          <i class="fa-solid fa-eye smail black-1"></i>
+          <li><a href="#" class="text-decor text"><p style="color: black;">&nbsp;Top all</p></a></li>
+         </div>
+         <div class="sub-list-box">
+          <i class="fa-solid fa-signal smail black-1"></i>
+          <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Truyện Full</p></a></li>
+         </div>
+         <div class="sub-list-box">
+          <i class="fa-solid fa-eye smail black-1"></i>
+          <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Top Tháng</p></a></li>
+         </div>
+         <div class="sub-list-box">
+          <i class="fa-regular fa-thumbs-up smail black-1"></i>
+          <li><a href="#" class="text-decor text"><p style="color:black">&nbsp; yêu thích</p></a></li>
+         </div>
+         <div class="sub-list-box">
+          <i class="fa-solid fa-eye smail black-1"></i>
+          <li><a href="#" class="text-decor text"></i><p style="color:black">&nbsp;Top Tuần</p></a></li>
+         </div>
+         <div class="sub-list-box">
+          <i class="fa-solid fa-recycle smail black-1"></i>
+          <li><a href="#" class="text-decor text"></i><p style="color:black">&nbsp;Mới Cập NHật</p></a></li>
+         </div>
+         <div class="sub-list-box">
+          <i class="fa-solid fa-eye smail black-1"></i>
+          <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Top Ngày</p></a></li>
+         </div>
+         <div class="sub-list-box">
+          <i class="fa-solid fa-cloud-arrow-up smail black-1"></i>
+          <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Mới tải lên</p></a></li>
+         </div>
+         <div class="sub-list-box">
+          <i class="fa-solid fa-eye smail black-1"></i>
+          <li><a href="#" class="text-decor text"><p style="color:black">Top Follow</p></a></li>
+         </div>
+         <div class="sub-list-box">
+          <i class="fa-solid fa-bars smail black-1"></i>
+          <li><a href="#" class="text-decor text"><p style="color:black">&nbsp;Số Chapter</p></a></li>
+         </div>
+         
+      </ul>
+    </div>
+   </li>
+     <li><a href="#" class="list-box text jcc">
+        <p>Tìm Truyện</p>
+     </a></li>
+     <li><a href="#" class="list-box text jcc">
+        <p>Con Gái</p>
+     </a></li>
+     <li><a href="#" class="list-box text jcc">
+        <p>Con Trai</p>
+     </a></li>
+     <li><a href="#" class="list-box text jcc">
+        <p>Truyện Chũ</p>
+     </a></li>
+     <li><a href="#" class="list-box text jcc">
+      <p>Fanpage</p>
+     </a></li>
+   </ul>
+   </div>
+   <div class="nav-notification ">
+   </div>
+   <div class="nav-notification jcc">
+   <div class="nav-notification-box ">
+   <a class="black" href="#">Nhấp vào đây </a><p class="black"> &nbsp;để đăng nhập tự động và đồng bộ truyện theo dõi từ site cũ.Không truy cập web giả mạo để tránh bọ hack tài khoản. </p>
+   </div>
+   </div>
+<div class="body-container">
+    <div style="background: url(./img/bg_2.jpg); width: 100%; height: 100vh; background-size:cover ;
+   background-position: center;" ></div>
+
+</div>
+
+</body>
+</html>

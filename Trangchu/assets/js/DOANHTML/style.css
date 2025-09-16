@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background:black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.home {
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(21, 153, 206);
+}
+
+a:hover {
+    color: rgb(159, 4, 159);
+}
+
+.main-content {
+    display: flex;
+    max-width: 960px;
+}
+    
+.content ul {
+    list-style: none;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.first-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list-info {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    margin-right: 10px;
+    width: 200px;
+    height: 310px;
+}
+
+.list-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust the margin as needed to create space between list items */
+}
+
+.list-info p {
+    margin: 0; /* Remove default margin for paragraphs inside list items */
+}
+
+
+.ratings .star {
+    color: blueviolet;
+}
+.ratings .xeploai {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.ratings .xeploai .yolo {
+    margin-left: 58px;
+}
+
+.other-name>h2{
+    margin-left: 50px;
+}
+.author>.name-author {
+    margin-left:62px ;
+}
+.status>.status-name {
+    margin-left: 44px;
+}
+.category>.category-list {
+    margin-left: 59px;
+}
+.view>.total-view {
+    margin-left: 45px;
+}
+
+.follow {
+    display: flex;
+    align-items: center;
+}
+
+.follow .follower {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.follow .follow-icon {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    width: max-content;
+    height:fit-content;
+    border-radius: 5px ;
+    padding: 6px 10px;
+    color: aliceblue;
+    
+}
+
+.other-name, .author, .status, .category, .view{
+    margin-bottom: 30px;
+}
+
+.ratings, .read-action {
+    margin-bottom: 10px;
+} 
+
+.follow {
+    margin-bottom: 18px;
+}
+
+.read-first, .read-new {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    width: max-content;
+    height:fit-content;
+    border-radius: 5px ;
+    padding: 6px 10px 8px 10px;
+    color: aliceblue;
+}
+.read-continue {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    width: max-content;
+    height:fit-content;
+    border-radius: 5px ;
+    padding: 6px 10px 8px 10px;
+    color: aliceblue;
+}
+.read-first:hover, .read-new:hover {
+    background-color: #c89855;
+    color: rgb(216, 231, 245);
+}
+
+.read-continue:hover {
+    background-color: #ba4945;
+    color: rgb(216, 231, 245);
+}
+.star:hover {
+    color: gold;
+}
+

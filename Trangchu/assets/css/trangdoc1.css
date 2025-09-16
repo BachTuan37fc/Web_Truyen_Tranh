@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-->Reset box*/
+html {
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.content .slider-main .home {
+    background-color: rgb(58, 58, 59);
+    border: solid 1px #8f8c8c;
+    padding: 3px;
+    border-radius: 5px;
+    list-style: none;
+    padding-bottom: 6px;
+}
+
+.content .slider-main .home .home-page {
+    padding: 15px;  
+}
+
+.content .slider-main .home .home-page1 {
+    padding: 15px; 
+    display: flex;
+}
+
+.content .slider-main .home .home-page1 a {
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(21, 153, 206);
+}
+
+a:hover {
+    color: rgb(159, 4, 159);
+}
+
+/*header*/
+
+
+
+.navbar1 .nav1 {
+   display: flex;
+   justify-content:space-between;
+}
+.nav1 li { 
+    position: relative;
+}
+.nav1 > li {
+    display: inline-block;
+}
+
+.nav1 li a {
+    text-decoration: none;
+    line-height: 50px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+.nav1 > li > a {
+    text-transform: uppercase;
+}
+
+
+.home .home-page a,
+.home .home-page .navbar1 .nav1 a {
+    margin-right: 3px;
+}
+
+.nav1 li { 
+    position: relative;
+}
+.nav1 > li {
+    display: inline-block;
+}
+
+.nav1 li:hover .subnav1 {
+    display: block;
+}
+
+.nav1 > li:hover > a,
+.nav .subnav li:hover {
+    border-radius: 6px;
+    color: blueviolet;
+    background-color: rgb(195, 194, 190);
+}
+
+.subnav1 > li:hover >a,
+.nav .subnav li:hover {
+    border-radius: 6px;
+    color: blueviolet;
+}
+
+.nav1 .subnav1 {
+    display:  none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: rgb(58, 58, 59);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    border-radius: 6px;
+}
+
+.nav1 .subnav1 a {
+    display: block;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+.nav1, .subnav1 {
+    list-style: none;
+}
+
+.row .page ul li {
+    list-style: none;
+}
+
+.row {
+    background-color:rgb(214, 194, 233) ;
+}
+
+.row .page ul li img {
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.container {
+    height: fit-content;
+    background-color: #fff;
+    background-image: url(/Trangchu/assets/img/fireworks-colorful-27-23-adobe.jpg);
+    
+}
+
+
+/* mobile*/
+@media (max-width:768px) {
+    .content .slider-main .home{
+        width: 97%;
+    }
+
+    .row .page ul li img{
+        margin: 0;
+        width:400px;
+        
+        
+    }
+
+    .home .home-page .navbar1 .nav1 li span {
+        display: none;
+    }
+}
+
+
+
+

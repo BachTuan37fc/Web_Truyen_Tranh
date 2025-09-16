@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Đăng_Nhập.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@1,700&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/98387a279c.js"></script>
+    <title>Đăng Nhập</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="p">
+            <span class="text first-text">
+                Quickbook là nơi
+            </span>
+            <span class="text sec-text">
+                giải trí
+            </span>
+            
+            <p class="title">
+                Hãy cùng tham gia vào cộng đồng của chúng tôi!
+            </p>
+        </div>
+
+        <script>
+            const text=document.querySelector(".sec-text");
+            const text_load = () =>{
+                setTimeout(() => {
+                    text.textContent = "giúp bạn giải trí ";
+                },0);
+                setTimeout(() => {
+                    text.textContent = "thỏa mãn đam mê ";
+                },4000);
+                setTimeout(() => {
+                    text.textContent = "giúp bạn yêu đời ";
+                },8000);
+            }
+            text_load();
+            setInterval(text_load,12000);
+        </script>
+        <div class="login">
+            <form action="" class="from-login">
+                <div class="back-home">
+                    <a href="/Lich_Su/Lịch_Sử.html" target="_blank"><i class="fa-solid fa-house"></i></a>
+                </div>
+
+                <div class="form-heading">
+                    <div class="upload-img">
+
+                    </div>
+                    <div>Đăng nhập vào Quickbook truyện</div>
+                </div>
+                <div class="form-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="from-input" placeholder="&nbsp;Name">
+                </div>
+                <div class="form-group">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" class="from-input" placeholder="&nbsp;Password">
+                    <div id="eye"><i class="far-fa-eye"></i></div>
+                    
+                </div>
+                <div class="bottom">
+                <div class="remember-box">
+                    <input type="checkbox" class="check">
+                    <label for="check">Lưu đăng nhập</label>
+                </div>
+                <div class="fgpassword">
+                    <a href="#">Bạn quên mật khẩu ?</a>
+                </div>
+                </div>
+                <input type="submit" value="Đăng Nhập" class="form-submit">
+                <div class="submit-space"> <input type="submit" value="Đăng Ký" class="form-submit"></div>
+                <div class="gg-fb">
+                    <div class="gg">
+
+                    </div>
+                    <div class="fb">
+                        
+                    </div>
+                    <div class="apple">
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        </div>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#eye').click(function(){
+                $(this).toggleClass('open');
+                $(this).children('i').toggleClass('fa-eye-slash fa-eye');
+                if ($(this).hasClass('open')){
+                    $(this).prev().attr('type','text');
+                }else{
+                    $(this).prev().attr('type','password');
+
+                }
+            });
+        });
+    </script>
+    <script>
+        var button = document.querySelector('.form-submit');
+        button.onclick = function(){
+        alert("Bạn đã đăng nhập thành công");
+        }
+      </script>
+    
+</body>
+</html>
